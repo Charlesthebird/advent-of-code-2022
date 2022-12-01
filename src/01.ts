@@ -2,8 +2,8 @@ import * as fs from "fs";
 
 // https://adventofcode.com/2022/day/1
 console.log(
-  ((inputStr: string) =>
-    inputStr
+  ((s: string) =>
+    s
       .split("\n")
       .reduce(
         (p, c) =>
