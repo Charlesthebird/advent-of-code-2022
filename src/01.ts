@@ -13,7 +13,6 @@ console.log(
         [0]
       )
       .sort()
-      // .at(-1);
       .slice(-3)
       .reduce((p, c) => p + c, 0))(fs.readFileSync("./inputs/01.txt", "utf-8"))
 );
