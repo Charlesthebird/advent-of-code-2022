@@ -11,6 +11,9 @@ const result = inputStr
         : [...p.slice(0, -1), p.at(-1) + Number.parseInt(c)],
     [0]
   )
-  .reduce((p, c) => (c > p ? c : p), 0);
+  .sort()
+  // .at(-1);
+  .slice(-3)
+  .reduce((p, c) => p + c, 0);
 
 console.log(result);
