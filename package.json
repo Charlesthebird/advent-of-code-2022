@@ -1,0 +1,18 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Charlesthebird/advent-of-code-2022.git",
+  "author": "Nicholas Bucher <behappy54321@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "debug": "ts-node",
+    "tsc": "tsc -p ./tsconfig.json"
+  },
+  "dependencies": {
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.10"
+  }
+}
