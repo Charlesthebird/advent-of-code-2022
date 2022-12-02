@@ -11,15 +11,14 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var fs = require("fs");
 // https://adventofcode.com/2022/day/1
-console.log((function (inputStr) {
-    return inputStr
+console.log((function (s) {
+    return s
         .split("\n")
         .reduce(function (p, c) {
         return c.trim() === ""
             ? __spreadArray(__spreadArray([], p, true), [0], false) : __spreadArray(__spreadArray([], p.slice(0, -1), true), [p.at(-1) + Number.parseInt(c)], false);
     }, [0])
         .sort()
-        // .at(-1);
         .slice(-3)
         .reduce(function (p, c) { return p + c; }, 0);
 })(fs.readFileSync("./inputs/01.txt", "utf-8")));
